@@ -301,7 +301,52 @@ namespace ExerciciosCursoCSharp
             // Mostre quantos destes valores X estão dentro do intervalo[10, 20] e quantos estão fora do intervalo, mostrando
             // essas informações conforme exemplo(use a palavra "in" para dentro do intervalo, e "out" para fora do intervalo).
 
+            //string cont = "S";
+            //int n = 0, numero = 0, contArray = 0;
 
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    int dentro = 0, fora = 0;
+            //    Console.WriteLine("Digite a quantidade de números que será digitada:");
+            //    n = int.Parse(Console.ReadLine());
+
+            //    if (n > 0)
+            //    {
+            //        for (int i = 1; i <= n; i++)
+
+            //        {
+
+            //            Console.WriteLine($"Digite o {i}º número:");
+            //            numero = int.Parse(Console.ReadLine());
+            //            int[] numeros = new int[n];
+            //            numeros[contArray] = numero;
+
+            //            if (numero >= 10 && numero <= 20)
+            //            {
+            //                dentro++;
+            //            }
+
+            //            else
+            //            {
+            //                fora++;
+            //            }
+
+            //        }
+
+
+            //    }
+
+            //    else
+            //    {
+            //        Console.WriteLine("Digite um número maior que 0!");
+            //    }
+
+            //    Console.WriteLine($"Há {dentro} número(s) dentro do intervalo determinado e {fora} fora deste intervalo.");
+
+            //    Console.WriteLine("Deseja realizar um novo calculo?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
 
 
 
