@@ -2,6 +2,7 @@
 using System.Net.Mail;
 using System.Net.Security;
 using System.Runtime.CompilerServices;
+using System.Threading;
 
 namespace ExerciciosCursoCSharp
 {
@@ -19,6 +20,8 @@ namespace ExerciciosCursoCSharp
             #region Seção 1
 
             #region Atividade 1
+
+            #region Questão 1
 
             // Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1,
             // o código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago
@@ -64,7 +67,7 @@ namespace ExerciciosCursoCSharp
 
             #endregion
 
-            #region Atividade 2
+            #region Questão 2
 
             // Faça um programa para ler o valor do raio de um círculo, 
             // e depois mostrar o valor da área deste círculo com quatro
@@ -93,7 +96,7 @@ namespace ExerciciosCursoCSharp
             //}
             #endregion
 
-            #region Atividade 3
+            #region Questão 3
 
             // Com base na tabela de preços ao lado (abaixo), faça
             // um programa que leia o código de um item e a
@@ -209,7 +212,7 @@ namespace ExerciciosCursoCSharp
 
             #endregion
 
-            #region Atividade 4
+            #region Questão 4
 
             // Ler os valores dos três coeficientes "a", "b" e "c" de uma equação do segundo grau(ax²+bx + c = 0)
             // Em seguida, mostrar os valores das raízes da equação, conforme exemplos, usando a fórmula de Baskara(veja
@@ -261,7 +264,7 @@ namespace ExerciciosCursoCSharp
 
             #endregion
 
-            #region Atividade 5
+            #region Questão 5
 
             // Escreva um programa que repita a leitura de uma senha até que ela seja válida.Para cada leitura de senha
             // incorreta informada, escrever a mensagem "Senha Invalida".Quando a senha for informada corretamente deve ser
@@ -295,7 +298,7 @@ namespace ExerciciosCursoCSharp
 
             #endregion
 
-            #region Atividade 6
+            #region Questão 6
 
             // Leia um valor inteiro N.Este valor será a quantidade de valores inteiros X que serão lidos em seguida.
             // Mostre quantos destes valores X estão dentro do intervalo[10, 20] e quantos estão fora do intervalo, mostrando
@@ -354,6 +357,8 @@ namespace ExerciciosCursoCSharp
 
             #endregion
 
+            #endregion
+
             #region Seção 2
 
             //Não houve exercídio nesta seção
@@ -364,7 +369,150 @@ namespace ExerciciosCursoCSharp
 
             #region Atividade 1
 
+            #region Questão 1
 
+            // Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
+            // mensagem explicativa, conforme exemplos.
+
+            //int n1, n2, soma;
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o valor do primeiro número:");
+            //    n1 = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor do segundo número:");
+            //    n2 = int.Parse(Console.ReadLine());
+            //    soma = n1 + n2;
+
+            //    Console.WriteLine($"A somas dos números {n1} e {n2} é {soma}.");
+
+            //    Console.WriteLine("Deseja realizar outro calculo?(Sim/Nã0)");
+            //    cont = Console.ReadLine();
+
+            //}
+
+            #endregion
+
+            #region Questão 2
+
+            // Fazer um programa para ler quatro valores inteiros A, B, C e D.A seguir, calcule e mostre a diferença do produto
+            // de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
+
+            //int a, b, c, d, dif;
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o valor de A:");
+            //    a = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor de B:");
+            //    b = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor de C:");
+            //    c = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor de D:");
+            //    d = int.Parse(Console.ReadLine());
+
+            //    dif = (a * b) - (c * d);
+
+            //    Console.WriteLine($"A diferença dos produtos é igual a:{dif}");
+
+            //    Console.WriteLine("Deseja realizar outro calculo?(Sim/Não)");
+            //    cont = Console.ReadLine();
+
+            //}
+
+
+            #endregion
+
+            #region Questão 3
+
+            // Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por
+            // hora e calcula o salário desse funcionário.A seguir, mostre o número e o salário do funcionário, com duas casas
+            // decimais.
+
+            //double[] funcionario = new double[4];
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o código do funcionário:");
+            //    funcionario[0] = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o número de horas trabalhadas:");
+            //    funcionario[1] = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor que ele recebe por hora:");
+            //    funcionario[2] = double.Parse(Console.ReadLine());
+            //    funcionario[3] = funcionario[1] * funcionario[2];
+
+            //    Console.WriteLine($"O código digitado para o funcionário é: {funcionario[0]} e ele irá ganhar R${funcionario[3]:F2} de salário.");
+
+            //    Console.WriteLine("Deseja digitar informações de outro funcionário?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+
+            #endregion
+
+            #region Questão 4
+
+            // Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o
+            // código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2.Calcule e mostre o valor a ser pago.
+
+            //double[,] pecas = new double[2, 3];
+            //double totalPedido;
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o código da primeira peça:");
+            //    pecas[0, 0] = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite a quantidade de peças a serem vendidas:");
+            //    pecas[0, 1] = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor da peça a ser vendidas:");
+            //    pecas[0, 2] = double.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("Digite o código da segunda peça:");
+            //    pecas[1, 0] = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite a quantidade de peças a serem vendidas:");
+            //    pecas[1, 1] = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor da peça a ser vendidas:");
+            //    pecas[1, 2] = double.Parse(Console.ReadLine());
+
+            //    totalPedido = (pecas[0,1] * pecas[0, 2]) + (pecas[1, 1] * pecas[1, 2]);
+
+            //    Console.WriteLine($"O total do pedido é: {totalPedido:F2}");
+
+            //    Console.WriteLine("Deseja calcular um novo pedido?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+            #endregion
+
+            #region Questão 5
+
+            // Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C.Em seguida, calcule e
+            // mostre:
+            // a) a área do triângulo retângulo que tem A por base e C por altura.
+            // b) a área do círculo de raio C. (pi = 3.14159)
+            // c) a área do trapézio que tem A e B por bases e C por altura.
+            // d) a área do quadrado que tem lado B.
+            // e) a área do retângulo que tem lados A e B.
+
+            double a, b, c;
+            string[] numeros = new string[3];
+
+            Console.WriteLine("Digite o valor de A, B e C, serpados por um espaço em branco:");
+            numeros = Console.ReadLine().Split(" ");
+
+            a = double.Parse(numeros[0]);
+            b = double.Parse(numeros[1]);
+            c = double.Parse(numeros[2]);
+
+
+
+            #endregion
 
 
             #endregion
