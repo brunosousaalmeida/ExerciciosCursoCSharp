@@ -500,26 +500,121 @@ namespace ExerciciosCursoCSharp
             // d) a área do quadrado que tem lado B.
             // e) a área do retângulo que tem lados A e B.
 
-            double a, b, c;
-            string[] numeros = new string[3];
+            //double a, b, c;
+            //string[] numeros = new string[3];
 
-            Console.WriteLine("Digite o valor de A, B e C, serpados por um espaço em branco:");
-            numeros = Console.ReadLine().Split(" ");
+            //string cont = "S";
 
-            a = double.Parse(numeros[0]);
-            b = double.Parse(numeros[1]);
-            c = double.Parse(numeros[2]);
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o valor de A, B e C, serpados por um espaço em branco:");
+            //    numeros = Console.ReadLine().Split(" ");
 
+            //    a = double.Parse(numeros[0]);
+            //    b = double.Parse(numeros[1]);
+            //    c = double.Parse(numeros[2]);
+
+            //    Console.WriteLine(a.ToString(), b.ToString(), c.ToString());
+
+            //    // Para encontrar a área de um triângulo retângulo, 
+            //    // basta dividir por 2 o resultado da multiplicação da base(b) pela altura(h).  
+
+            //    double areaTrianguloRet = (a * c) / 2;
+
+            //    Console.WriteLine($"O valor da área do triangulo levando em consideração os valores {a} e {c} é: {areaTrianguloRet:F3}");
+
+            //    // Fórmula: area = π.raio²
+            //    // Considere o valor de π = 3.14159
+
+            //    double pi = 3.14159, areaCirculo = 0, raio = c;
+            //    areaCirculo = pi * Math.Pow(raio, 2);
+
+            //    Console.WriteLine($"O valor da área do cirulo, considerando {c} como raio é: {areaCirculo:F3}");
+
+            //    //  A = h(B + b)
+            //    //         2
+
+            //    // h = altura
+            //    // B = base maior do trapézio
+            //    // b = base menor do trapézio
+
+            //    double areaTrapezio = c * (a + b) / 2;
+
+            //    Console.WriteLine($"O valor da área do trapézio, considerando {a} e {b} por bases e {c} por altura é: {areaTrapezio:F3}");
+
+            //    // Como o quadrado tem lados iguais, basta pegar a medida de um dos lados e elevar ao quadrado.
+
+            //    double areaQuadrado = Math.Pow(b, 2);
+
+            //    Console.WriteLine($"A área do quadrado levando {b} como tamanho do lado é igual a: {areaQuadrado:F3}");
+
+
+            //    // Para calcular a superfície ou área do retângulo basta multiplicar o valor da base com o da altura
+
+            //    double areaRetangulo = a * b;
+
+            //    Console.WriteLine($"A área do retangulo considerando {a} e {b} como lados é: {areaRetangulo:F3}");
+
+
+            //    Console.WriteLine("Deseja inserir novos dados para um novo caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+
+            //}
 
 
             #endregion
-
 
             #endregion
 
 
             #region Ativdade 2
 
+            #region Questão 1
+
+            // Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não.
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o número a ser verificado:");
+            //    int a = int.Parse(Console.ReadLine());
+
+            //    if (a == 0)
+            //    {
+
+            //        Console.WriteLine("Este número é neutro!");
+
+            //    }
+
+            //    else if(a > 0)
+            //    {
+
+            //        Console.WriteLine("Este número é positivo!");
+
+            //    }
+
+            //    else
+            //    {
+            //        Console.WriteLine("Este número é negativo!");
+            //    }
+
+            //    Console.WriteLine("Deseja verificar outro número?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+
+
+
+            #endregion
+
+            #region Questão 2
+
+
+
+            #endregion
 
             #endregion
 
