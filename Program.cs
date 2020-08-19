@@ -612,6 +612,70 @@ namespace ExerciciosCursoCSharp
 
             #region Questão 2
 
+            // Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar.
+
+            //string cont = "S";
+
+            //while (cont == "S")
+            //{
+            //    Console.WriteLine("Digite o número que deseja verificar:");
+            //    int numero = int.Parse(Console.ReadLine());
+
+            //    if (numero % 2 == 0)
+            //    {
+            //        Console.WriteLine("Este é um número par!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Este número é impar");
+            //    }
+
+            //    Console.WriteLine("Deseja veriricar outro número?(Sim/Nâo)");
+            //    cont = Console.ReadLine().ToUpper();
+            //}
+
+            #endregion
+
+            #region Questão 3
+
+            // Leia 2 valores inteiros(A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao
+            // Multiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os números devem poder ser digitados em
+            // ordem crescente ou decrescente.
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+
+            //    Console.WriteLine("Digite o valor de A:");
+            //    int a = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor de B:");
+            //    int b = int.Parse(Console.ReadLine());
+
+            //    if (a % b == 0 || b % a == 0)
+            //    {
+
+            //        Console.WriteLine($"{a} e {b} são mutiplos!");
+
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{a} e {b} não são multimplos!");
+            //    }
+            //    Console.WriteLine("Deseja verificar outro caso?(Sim/Não)");
+            //    cont = Console.ReadLine();
+
+            //}
+
+
+
+            #endregion
+
+            #region Questão 4
+
+            // Leia a hora inicial e a hora final de um jogo.A seguir calcule a duração do jogo, sabendo que o mesmo pode
+            // começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
+
 
 
             #endregion
