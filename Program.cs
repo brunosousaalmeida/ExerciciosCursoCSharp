@@ -676,18 +676,84 @@ namespace ExerciciosCursoCSharp
             // Leia a hora inicial e a hora final de um jogo.A seguir calcule a duração do jogo, sabendo que o mesmo pode
             // começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
 
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+
+            //    Console.WriteLine("Digite o horário de início, seguido do horário final separados por um espaço em branco:");
+
+            //    string[] valores = Console.ReadLine().Split(' ');
+            //    int horaInicial = int.Parse(valores[0]);
+            //    int horaFinal = int.Parse(valores[1]);
+
+            //    int duracao;
+            //    if (horaInicial < horaFinal)
+            //    {
+            //        duracao = horaFinal - horaInicial;
+            //    }
+            //    else
+            //    {
+            //        duracao = 24 - horaInicial + horaFinal;
+            //    }
+
+            //    Console.WriteLine($"O jogo durou {duracao} hora(s)");
+
+            //    Console.WriteLine("Deseja calcalar outro caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+            #endregion
+
+            #region Questão 5
+
+            // Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos
+            // seguintes intervalos([0,25], (25, 50], (50, 75], (75, 100]) este valor se encontra. Obviamente se o valor não estiver em
+            // nenhum destes intervalos, deverá ser impressa a mensagem “Fora de intervalo”.
+
+            Console.WriteLine("Digite o valor a ser verificado");
+            int numero = int.Parse(Console.ReadLine());
+
+            if (numero >= 0 && numero <= 25)
+            {
+                Console.WriteLine("Este núemero faz parte da primeira faixa(0, 25)");
+            }
+            else if(numero >= 25 && numero <= 50)
+            {
+                Console.WriteLine("Este núemero faz parte da segunda faixa(25, 50)");
+            }
+            else if (numero >=50 && numero <=75)
+            {
+                Console.WriteLine("Este núemero faz parte da terceira faixa(50, 75)");
+            }
+            else if (numero >=75 && numero <= 100)
+            {
+                Console.WriteLine("Este núemero faz parte da quarta faixa(75, 100)");
+            }
+            else
+            {
+                Console.WriteLine("Este número está fora dos intervalos determinados!");
+            }
+
 
 
             #endregion
 
-            #endregion
-
-            #endregion
 
         }
 
+
+
+
+        #endregion
+
+        #endregion
 
     }
 
 
 }
+
+
+
