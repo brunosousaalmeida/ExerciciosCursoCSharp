@@ -569,7 +569,6 @@ namespace ExerciciosCursoCSharp
 
             #endregion
 
-
             #region Ativdade 2
 
             #region Questão 1
@@ -825,53 +824,150 @@ namespace ExerciciosCursoCSharp
             // de 8 % sobre R$ 1000.00 + 18 % sobre R$ 2.00, o que resulta em R$ 80.36 no total.O valor deve ser impresso com
             // duas casas decimais.
 
+            //string cont = "S";
+            //double imposto = 0;
+
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o valor do salário a ser verificado:");
+            //    double salario = double.Parse(Console.ReadLine());
+
+            //    if (salario <= 2000)
+            //    {
+            //        imposto = 0;
+            //    }
+            //    else if (salario <= 3000)
+            //    {
+            //        imposto = (salario - 2000) * 0.08;
+
+            //    }
+            //    else if (salario <= 4500)
+            //    {
+            //        imposto = (salario - 3000) * 0.18 + 1000 * 0.08;
+            //    }
+            //    else if (salario > 4500)
+            //    {
+            //        imposto = (salario - 4500) * 0.28 + 1500 * 0.18 + 1000 * 0.08;
+            //    }
+
+            //    if (imposto == 0)
+            //    {
+            //        Console.WriteLine("Salário isento de imposto!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"O valor calculado de imposto sobre o salário digitado (R${salario:F2}) é: R${imposto:F2}!");
+            //    }
+
+            //    Console.WriteLine("Deseja verificar outro caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
 
             #endregion
-            #region Questão 7
 
-            string cont = "S";
-            double imposto = 0;
+            #endregion
+
+            #region Atividade 3
+
+            #region Questão 1
+
+            // Escreva um programa que repita a leitura de uma senha até que ela seja válida.Para cada leitura de senha
+            // incorreta informada, escrever a mensagem "Senha Invalida".Quando a senha for informada corretamente deve ser
+            // impressa a mensagem "Acesso Permitido" e o algoritmo encerrado.Considere que a senha correta é o valor 2002.
+
+            //int senha = 2002, senhaDig = 0;
+
+            //while (senhaDig != senha)
+            //{
+            //    Console.WriteLine("Digite a senha:");
+            //    senhaDig = int.Parse(Console.ReadLine());
+
+            //    if (senhaDig != senha)
+            //    {
+            //        Console.WriteLine("Senha Inválida!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Acesso concedido!");
+            //    }
+
+            //}
+
+            #endregion
+
+            #region Questão 2
+
+            // Um Posto de combustíveis deseja determinar qual de seus produtos tem a preferência de seus clientes. Escreva
+            // um algoritmo para ler o tipo de combustível abastecido(codificado da seguinte forma: 1.Álcool 2.Gasolina 3.Diesel
+            // 4.Fim). Caso o usuário informe um código inválido(fora da faixa de 1 a 4) deve ser solicitado um novo código(até
+            // que seja válido). O programa será encerrado quando o código informado for o número 4.Deve ser escrito a
+            // mensagem: "MUITO OBRIGADO" e a quantidade de clientes que abasteceram cada tipo de combustível, conforme
+            // exemplo.
+
+            //string cont = "S";
+
+            //while(cont == "S" || cont == "SIM")
+            //{
+            //    int cod = 0, alcool = 0, gasolina = 0, diesel = 0;
+
+            //    while (cod != 4)
+            //    {
+            //        Console.WriteLine("Digite o código do produto que deseja realizar a venda (1.Álcool 2.Gasolina 3.Diesel) ou 4 para encerrar e calcular:");
+            //        cod = int.Parse(Console.ReadLine());
+
+            //        if (cod == 1)
+            //        {
+            //            alcool++;
+            //        }
+            //        else if (cod == 2)
+            //        {
+            //            gasolina++;
+            //        }
+            //        else if (cod == 3)
+            //        {
+            //            diesel++;
+            //        }
+
+            //    }
+
+            //    Console.WriteLine($"OBRIGADO! {alcool} cliente(s) comprou(aram) álcool, {gasolina} comprou(aram) gasolina e {diesel} comprou(aram) diesel.");
+
+            //    Console.WriteLine("Deseja zerar os valores e voltar a somar vendas?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
 
 
-            while (cont == "S" || cont == "SIM")
+
+            #endregion
+
+
+            #endregion
+
+            #region Atividade 4
+
+            #region Questão 1
+
+            // Leia um valor inteiro X(1 <= X <= 1000).Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o
+            // se for o caso.
+
+            int x = 0;
+
+            Console.WriteLine("Digite o valor final:");
+            x = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= x; i++)
             {
-                Console.WriteLine("Digite o valor do salário a ser verificado:");
-                double salario = double.Parse(Console.ReadLine());
-
-                if (salario <= 2000)
+                if (x % 2 != 0)
                 {
-                    imposto = 0;
+                    Console.WriteLine("");
                 }
-                else if (salario <= 3000)
-                {
-                    imposto = (salario - 2000) * 0.08;
-
-                }
-                else if (salario <= 4500)
-                {
-                    imposto = (salario - 3000) * 0.18 + 1000 * 0.08;
-                }
-                else if (salario > 4500)
-                {
-                    imposto = (salario - 4500) * 0.28 + 1500 * 0.18 + 1000 * 0.08;
-                }
-
-                if (imposto == 0)
-                {
-                    Console.WriteLine("Salário isento de imposto!");
-                }
-                else
-                {
-                    Console.WriteLine($"O valor calculado de imposto sobre o salário digitado (R${salario:F2}) é: R${imposto:F2}!");
-                }
-
-                Console.WriteLine("Deseja verificar outro caso?(Sim/Não)");
-                cont = Console.ReadLine().ToUpper();
 
             }
 
-
-
+            #endregion
 
 
             #endregion
@@ -889,7 +985,7 @@ namespace ExerciciosCursoCSharp
 
     #endregion
 
-    #endregion
+
 
 }
 
