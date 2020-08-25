@@ -4,6 +4,7 @@ using System.Net.Mail;
 using System.Net.Security;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Runtime.Serialization;
 using System.Threading;
 
 namespace ExerciciosCursoCSharp
@@ -953,19 +954,144 @@ namespace ExerciciosCursoCSharp
             // Leia um valor inteiro X(1 <= X <= 1000).Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o
             // se for o caso.
 
-            int x = 0;
+            //string cont = "S";
 
-            Console.WriteLine("Digite o valor final:");
-            x = int.Parse(Console.ReadLine());
+            //while(cont == "S" || cont == "SIM")
+            //{
 
-            for (int i = 1; i <= x; i++)
-            {
-                if (x % 2 != 0)
-                {
-                    Console.WriteLine("");
-                }
+            //    int x = 0;
 
-            }
+            //    Console.WriteLine("Digite o valor final:");
+            //    x = int.Parse(Console.ReadLine());
+
+
+
+            //    for (int i = 1; i <= x; i++)
+            //    {
+
+            //        if (i % 2 != 0)
+            //        {
+            //            Console.WriteLine(i);
+            //        }
+
+            //    }
+
+            //    Console.WriteLine("Deseja verificar outro caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+
+            #endregion
+
+            #region Questão 2
+
+            // Leia um valor inteiro N.Este valor será a quantidade de valores inteiros X que serão lidos em seguida.
+            // Mostre quantos destes valores X estão dentro do intervalo[10, 20] e quantos estão fora do intervalo, mostrando
+            // essas informações conforme exemplo(use a palavra "in" para dentro do intervalo, e "out" para fora do intervalo).
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+
+            //    int dentro = 0, fora = 0;
+
+            //    Console.WriteLine("Digite a quantidade de números que será digitada:");
+            //    int n = int.Parse(Console.ReadLine());
+            //    int[] numeros = new int[n];
+
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        int x = 1 - 1;
+            //        Console.WriteLine($"Digite o {i}º número:");
+            //        numeros[x] = int.Parse(Console.ReadLine());
+
+            //        if (numeros[x] >= 10 && numeros[x] <= 20)
+            //        {
+
+            //            dentro++;
+
+            //        }
+            //        else
+            //        {
+            //            fora++;
+            //        }
+            //    }
+
+            //    Console.WriteLine($"Foi(ram) digitado(s) {dentro} números dentro do intervalo definido (entre 10 e 20) e {fora} fora do intervalo");
+
+            //    Console.WriteLine("Deseja verificar outros números?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+
+            //}
+
+
+            #endregion
+
+            #region Questão 3
+
+            // Leia 1 valor inteiro N, que representa o número de casos de teste que vem a seguir. Cada caso de teste consiste
+            // de 3 valores reais, cada um deles com uma casa decimal.Apresente a média ponderada para cada um destes
+            // conjuntos de 3 valores, sendo que o primeiro valor tem peso 2, o segundo valor tem peso 3 e o terceiro valor tem
+            // peso 5.
+
+            //Console.WriteLine("Digite a quantidade de casos que deseja calcular:");
+            //int n = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    Console.WriteLine("Digite os 3 números do primeiro caso a ser verificado:");
+            //    string[] numeros = Console.ReadLine().Split(" ");
+            //    double a = double.Parse(numeros[0]);
+            //    double b = double.Parse(numeros[1]);
+            //    double c = double.Parse(numeros[2]);
+
+            //    double media = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
+
+            //    Console.WriteLine($"A média ponderada (primeiro valor tem peso 2, o segundo valor tem peso 3 e o terceiro valor tem peso 5), segundo os números digitado ({a:F1},{b:F1} e {c:F1} respectivamente) é: {media:F1}");
+
+            //}
+
+            #endregion
+
+            #region Questão 4
+
+            // Fazer um programa para ler um número N. Depois leia N pares de números e mostre a divisão do primeiro pelo
+            // segundo.Se o denominador for igual a zero, mostrar a mensagem "divisao impossivel".
+
+            //Console.WriteLine("Digite o número de pares que irá calcular as divisões:");
+            //int n = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    Console.WriteLine($"Digite o {i}º par de números para a divisão:");
+            //    string[] numeros = Console.ReadLine().Split(" ");
+            //    double a = double.Parse(numeros[0]);
+            //    double b = double.Parse(numeros[1]);
+
+            //    if (b == 0)
+            //    {
+            //        Console.WriteLine("Impossível realizar a divisão! (Denominador igual a 0)");
+            //    }
+            //    else
+            //    {
+            //        double divisao = a / b;
+
+            //        Console.WriteLine($"O resultado da divisão de {a} por {b} é igual a: {divisao}");
+            //    }
+
+            //}
+
+            #endregion
+
+            #region Questão 5
+
+            // Ler um valor N. Calcular e escrever seu respectivo fatorial. Fatorial de N = N * (N - 1) * (N - 2) * (N - 3) * ... *1.
+            // Lembrando que, por definição, fatorial de 0 é 1.
+
+
 
             #endregion
 
