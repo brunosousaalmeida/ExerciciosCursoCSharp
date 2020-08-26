@@ -1091,10 +1091,109 @@ namespace ExerciciosCursoCSharp
             // Ler um valor N. Calcular e escrever seu respectivo fatorial. Fatorial de N = N * (N - 1) * (N - 2) * (N - 3) * ... *1.
             // Lembrando que, por definição, fatorial de 0 é 1.
 
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.Write("Digite o valor à calcular o valor do fatorial:");
+            //    int n = int.Parse(Console.ReadLine());
+
+            //    int fatorial = 1;
+
+
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        fatorial *= i;
+
+            //    }
+            //    Console.WriteLine($"O valor fatorial de {n} fatorial, é igual a {fatorial}");
+
+
+
+            //    Console.WriteLine("Deseja calcular novamente para um novo número?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+
 
 
             #endregion
 
+            #region Questão 6
+
+            // Ler um número inteiro N e calcular todos os seus divisores.
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+
+            //    Console.Write("Digite o valor para calcular seus divisores:");
+            //    int n = int.Parse(Console.ReadLine());
+
+
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        int x = i - 1;
+            //        int[] divisores = new int[n];
+
+            //        if (n % i == 0)
+            //        {
+            //            int divisor = i;
+            //            divisores[x] = divisor;
+
+            //            Console.WriteLine($"Os divisores são: {divisores[x]} ");
+
+            //        }
+
+            //    }
+
+            //    Console.WriteLine("Deseja calcular os divisores de outro número?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+
+
+
+
+            #endregion
+
+            #region Questão 7
+
+            // Fazer um programa para ler um número inteiro positivo N. O programa deve então mostrar na tela N linhas,
+            // começando de 1 até N. Para cada linha, mostrar o número da linha, depois o quadrado e o cubo do valor, conforme
+            // exemplo.
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.Write("Digite o valor desejado:");
+            //    int n = int.Parse(Console.ReadLine());
+
+            //    double quad, cub;
+
+
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        quad = Math.Pow(i, 2);
+            //        cub = Math.Pow(i, 3);
+
+            //        Console.WriteLine($"Linha {i}. Quadrado igual à {quad} e cubo igual à {cub}");
+
+            //    }
+
+            //    Console.WriteLine("Deseja realizar um novo cálculo?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+
+            //}
+
+
+
+            #endregion
 
             #endregion
 
