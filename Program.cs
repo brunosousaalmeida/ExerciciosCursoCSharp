@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace ExerciciosCursoCSharp
 {
@@ -1197,10 +1198,97 @@ namespace ExerciciosCursoCSharp
 
             #endregion
 
+            #endregion
+
+            #region Seção 4
+
+            #region atividade 1
+
+            #region Questão 1
+
+            // Fazer um programa para ler os dados de duas pessoas, depois mostrar o nome da pessoa mais
+            // velha (utilizando classes).
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Pessoas p1 = new Pessoas();
+            //    Pessoas p2 = new Pessoas();
+
+            //    Console.WriteLine("Digite o nome da primeira pessoa:");
+            //    p1.Nome = Console.ReadLine();
+            //    Console.WriteLine("Digite a idade da primeira pessoa:");
+            //    p1.Idade = int.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("Digite o nome da segunda pessoa:");
+            //    p2.Nome = Console.ReadLine();
+            //    Console.WriteLine("Digite a idade da segunda pessoa:");
+            //    p2.Idade = int.Parse(Console.ReadLine());
+
+            //    if (p1.Idade > p2.Idade)
+            //    {
+            //        Console.WriteLine($"A pessoa mais velha é {p1.Nome} com {p1.Idade}!");
+            //    }
+            //    else if (p1.Idade == p2.Idade)
+            //    {
+            //        Console.WriteLine("Os dois possuem a mesma idade!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"A pessoa mais velha é {p2.Nome} com {p2.Idade}!");
+            //    }
+            //    Console.WriteLine("Deseja verificar mais um caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+            //}
+
+            #endregion
+
+            #region Questão 2
+
+            // Fazer um programa para ler nome e salário de dois funcionários.Depois, mostrar o salário
+            // médio dos funcionários.
+
+            string cont = "S";
+
+            while (cont == "S" || cont == "SIM")
+            {
+
+                Funcionario func1 = new Funcionario();
+                Funcionario func2 = new Funcionario();
+
+                Console.WriteLine("Digite o nome do primeiro funcionário:");
+                func1.Nome = Console.ReadLine();
+                Console.WriteLine("Digite o salário do primeiro funcionáro:");
+                func1.Salario = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite o nome do segundo funcionário:");
+                func2.Nome = Console.ReadLine();
+                Console.WriteLine("Digite o salário do segudno funcionáro:");
+                func2.Salario = double.Parse(Console.ReadLine());
+
+                double media = (func1.Salario + func2.Salario) / 2;
+
+                Console.WriteLine($"A média de salário entre {func1.Salario} e {func2.Salario} é {media}");
+
+                Console.WriteLine("Deseja calcular um novo caso?(Sim/Não)");
+                cont = Console.ReadLine().ToUpper();
+            }
+
+
+            #endregion
+
+
+            #endregion
+
+
+
+            #endregion
+
+
+
 
         }
-
-
 
 
     }
@@ -1208,7 +1296,9 @@ namespace ExerciciosCursoCSharp
 
 
 
-    #endregion
+
+
+
 
 
 
