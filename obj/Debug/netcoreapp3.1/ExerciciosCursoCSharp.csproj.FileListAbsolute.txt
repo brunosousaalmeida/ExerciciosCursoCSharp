@@ -5,3 +5,9 @@ C:\Users\bruno\Projetos\ExerciciosCursoCSharp\obj\Debug\netcoreapp3.1\Exercicios
 C:\Users\bruno\Projetos\ExerciciosCursoCSharp\obj\Debug\netcoreapp3.1\ExerciciosCursoCSharp.csproj.CoreCompileInputs.cache
 C:\Users\bruno\Projetos\ExerciciosCursoCSharp\obj\Debug\netcoreapp3.1\ExerciciosCursoCSharp.dll
 C:\Users\bruno\Projetos\ExerciciosCursoCSharp\obj\Debug\netcoreapp3.1\ExerciciosCursoCSharp.pdb
+C:\Users\bruno\Projetos\ExerciciosCursoCSharp\bin\Debug\netcoreapp3.1\ExerciciosCursoCSharp.deps.json
+C:\Users\bruno\Projetos\ExerciciosCursoCSharp\bin\Debug\netcoreapp3.1\ExerciciosCursoCSharp.runtimeconfig.json
+C:\Users\bruno\Projetos\ExerciciosCursoCSharp\bin\Debug\netcoreapp3.1\ExerciciosCursoCSharp.runtimeconfig.dev.json
+C:\Users\bruno\Projetos\ExerciciosCursoCSharp\bin\Debug\netcoreapp3.1\ExerciciosCursoCSharp.dll
+C:\Users\bruno\Projetos\ExerciciosCursoCSharp\bin\Debug\netcoreapp3.1\ExerciciosCursoCSharp.pdb
+C:\Users\bruno\Projetos\ExerciciosCursoCSharp\obj\Debug\netcoreapp3.1\ExerciciosCursoCSharp.genruntimeconfig.cache

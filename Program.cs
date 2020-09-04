@@ -1275,10 +1275,73 @@ namespace ExerciciosCursoCSharp
             //    cont = Console.ReadLine().ToUpper();
             //}
 
-            Console.WriteLine("Teste");
+            #endregion
 
             #endregion
 
+            #region Atividade 2
+
+            #region Questão 1
+
+            //Fazer um programa para ler os valores da largura e altura de um retângulo. Em
+            //seguida, mostrar na tela o valor de sua área, perímetro e diagonal.Usar uma classe
+            //como mostrado no projeto ao lado.
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+            //{
+
+            //    Console.WriteLine("Digite o valor da largura do retângulo:");
+            //    double larg = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor da altura do retângulo:");
+            //    double alt = double.Parse(Console.ReadLine());
+
+            //    Retangulo ret = new Retangulo();
+            //    ret.Largura = larg;
+            //    ret.Altura = alt;
+
+            //    Console.WriteLine(ret);
+
+            //    Console.WriteLine("Deseja realiar os cálculos para um novo caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+            #endregion
+
+            #region Questão 2
+
+            // Fazer um programa para ler os dados de um funcionário(nome,
+            // salário bruto e imposto). Em seguida, mostrar os dados do
+            // funcionário(nome e salário líquido).Em seguida, aumentar o salário
+            // do funcionário com base em uma porcentagem dada(somente o
+            // salário bruto é afetado pela porcentagem) e mostrar novamente os
+            // dados do funcionário.Use a classe projetada abaixo.
+
+            Console.WriteLine("Digite o nome do funcionário:");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Digite o salário bruto do funcionário:");
+            double salario = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o percentual de imposto a ser descontado:");
+            double imposto = double.Parse(Console.ReadLine());
+
+            Funcionario func = new Funcionario();
+            func.Nome = nome;
+            func.SalarioBruto = salario;
+            func.Imposto = imposto;
+
+            Console.WriteLine(func);
+
+            Console.WriteLine("Digite a porcentagem para realizar o aumento do salário:");
+            double porcentagem = double.Parse(Console.ReadLine());
+
+            func.AumentarSalario(porcentagem);
+
+            Console.WriteLine(func);
+           
+
+            #endregion
 
             #endregion
 

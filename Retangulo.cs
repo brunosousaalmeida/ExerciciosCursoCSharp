@@ -41,9 +41,22 @@ namespace ExerciciosCursoCSharp
         public double Diagonal()
         {
 
-            double diagonal = Math.Sqrt(Largura + Altura);
+            double diagonal = Math.Sqrt(Math.Pow(Largura, 2) + Math.Pow(Altura, 2));
             return diagonal;
 
+        }
+
+        /// <summary>
+        /// Retornar em forma de string os dados coletados e calculados
+        /// </summary>
+        /// <returns>dadosString</returns>
+        public override string ToString()
+        {
+            return $"O valores de largura e altura são: {Largura} e {Altura} (respectivamente)\r\n" +
+                $"Os dados para esse retangulo são:\r\n" +
+                $"Area: {Area():F2}\r\n" +
+                $"Perimetro: {Perimetro():F2}\r\n" +
+                $"Diagonal: {Diagonal():F2}\r\n";
         }
 
     }
