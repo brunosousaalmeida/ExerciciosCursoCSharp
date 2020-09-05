@@ -1319,33 +1319,75 @@ namespace ExerciciosCursoCSharp
             // salário bruto é afetado pela porcentagem) e mostrar novamente os
             // dados do funcionário.Use a classe projetada abaixo.
 
-            Console.WriteLine("Digite o nome do funcionário:");
-            string nome = Console.ReadLine();
-            Console.WriteLine("Digite o salário bruto do funcionário:");
-            double salario = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o percentual de imposto a ser descontado:");
-            double imposto = double.Parse(Console.ReadLine());
+            //string cont = "S";
 
-            Funcionario func = new Funcionario();
-            func.Nome = nome;
-            func.SalarioBruto = salario;
-            func.Imposto = imposto;
+            //while(cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite o nome do funcionário:");
+            //    string nome = Console.ReadLine();
+            //    Console.WriteLine("Digite o salário bruto do funcionário:");
+            //    double salario = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o valor de imposto a ser descontado:");
+            //    double imposto = double.Parse(Console.ReadLine());
 
-            Console.WriteLine(func);
+            //    Funcionario func = new Funcionario();
+            //    func.Nome = nome;
+            //    func.SalarioBruto = salario;
+            //    func.Imposto = imposto;
 
-            Console.WriteLine("Digite a porcentagem para realizar o aumento do salário:");
-            double porcentagem = double.Parse(Console.ReadLine());
+            //    Console.WriteLine(func);
 
-            func.AumentarSalario(porcentagem);
+            //    Console.WriteLine("Digite a porcentagem para realizar o aumento do salário:");
+            //    double porcentagem = double.Parse(Console.ReadLine());
 
-            Console.WriteLine(func);
-           
+            //    func.AumentarSalario(porcentagem);
+
+            //    Console.WriteLine(func);
+
+            //    Console.WriteLine("Deseja calcular outro caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+
+
 
             #endregion
 
+            #region Questão 3
+
+            // Fazer um programa para ler o nome de um aluno e as três notas que ele obteve nos três trimestres do ano
+            // (primeiro trimestre vale 30 e o segundo e terceiro valem 35 cada).Ao final, mostrar qual a nota final do aluno no
+            // ano.Dizer também se o aluno está APROVADO ou REPROVADO e, em caso negativo, quantos pontos faltam
+            // para o aluno obter o mínimo para ser aprovado(que é 60 pontos). Você deve criar uma classe Aluno para resolver
+            // este problema.
+
+            //string cont = "S";
+
+            //while (cont == "S" || cont == "SIM")
+
+            //{
+            //    Aluno aluno = new Aluno();
+
+            //    Console.WriteLine("Digite o nome do aluno:");
+            //    aluno.Nome = Console.ReadLine();
+            //    Console.WriteLine("Digite a primeira nota do aluno:");
+            //    aluno.Nota1 = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite a segunda nota do aluno:");
+            //    aluno.Nota2 = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite a terceira nota do aluno:");
+            //    aluno.Nota3 = double.Parse(Console.ReadLine());
+
+            //    Console.WriteLine(aluno);
+
+            //    Console.WriteLine("Você deseja calcular um novo caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}      
+                                   
             #endregion
 
-
+            #endregion
 
             #endregion
 

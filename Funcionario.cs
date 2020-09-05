@@ -16,7 +16,9 @@ namespace ExerciciosCursoCSharp
         /// <returns>salarioLiquido</returns>
         public double SalarioLiquido()
         {
-            double valorImposto = (Imposto / 100) * SalarioBruto;
+            //Percebi que no exemplo do professor, está sendo informado valor do imposto e não percentual
+            //double valorImposto = (Imposto / 100) * SalarioBruto;
+            double valorImposto = Imposto;
             double salarioLiquido = SalarioBruto - valorImposto;
             return salarioLiquido;
         }
@@ -26,8 +28,9 @@ namespace ExerciciosCursoCSharp
         /// </summary>
         /// <param name="porcent"></param>
         public void AumentarSalario(double porcent)
-        {            
-            double aumentarSalario = SalarioBruto + (SalarioBruto * porcent/100);
+        {
+            double valorAumento = SalarioBruto * (porcent / 100);
+            SalarioBruto += valorAumento;
         }
 
         /// <summary>

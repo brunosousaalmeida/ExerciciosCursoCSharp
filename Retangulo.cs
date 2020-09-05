@@ -4,6 +4,10 @@ using System.Text;
 
 namespace ExerciciosCursoCSharp
 {
+
+    /// <summary>
+    /// Clase Retangulo
+    /// </summary>
     class Retangulo
     {
         // As formulas matemáticas foram pesquisadas na internet
