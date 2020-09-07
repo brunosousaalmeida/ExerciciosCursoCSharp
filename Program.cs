@@ -1384,8 +1384,20 @@ namespace ExerciciosCursoCSharp
             //    cont = Console.ReadLine().ToUpper();
 
             //}      
-                                   
+
             #endregion
+
+            #endregion
+
+            #region Atividade 3
+
+            // Faça um programa para ler a cotação do dólar, e depois um valor em dólares a ser comprado por uma pessoa em reais.
+            // Infomrar quantos reais a pessoa vai pagar pelos dólares, condireando ainda que a pessoa terá de pagar 6 % de IOF sobre o valor em dólar. 
+            // Criar uma classe ConversorDeMoeda para ser responsável pelos cálculos.
+
+            Console.WriteLine("Digite a cotação atual do dolar:");
+            Console.WriteLine();
+
 
             #endregion
 
