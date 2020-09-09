@@ -7,15 +7,19 @@ namespace ExerciciosCursoCSharp
     class ConversorDeMoeda
     {
 
-        public static double Cotacao;
-        public static double ValorCompra;
+        /// <summary>
+        /// Conversão real em dolar com 6% de IOF
+        /// </summary>
+ 
         public static int Iof = 6;
-        public static double ConversaoDolar(double compra)
+
+        public static double ConversaoDolar(double cotacao, double valorCompra)
         {
-            double p = Iof / 100;
-            double valorIof = ValorCompra * p;
-            return compra = (ValorCompra * Cotacao) + valorIof;             
+           
+            double total = valorCompra + (valorCompra * (Iof / 100.0));
+            return total *= cotacao;
         }
+       
 
     }
 }

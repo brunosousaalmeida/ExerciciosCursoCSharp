@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace ExerciciosCursoCSharp
 {
@@ -21,6 +22,7 @@ namespace ExerciciosCursoCSharp
 
 
         {
+
             #region Seção 1
 
             #region Atividade 1
@@ -1395,9 +1397,23 @@ namespace ExerciciosCursoCSharp
             // Infomrar quantos reais a pessoa vai pagar pelos dólares, condireando ainda que a pessoa terá de pagar 6 % de IOF sobre o valor em dólar. 
             // Criar uma classe ConversorDeMoeda para ser responsável pelos cálculos.
 
-            Console.WriteLine("Digite a cotação atual do dolar:");
-            Console.WriteLine();
+            //string cont = "S";
 
+            //while (cont == "S" || cont == "SIM")
+
+            //{
+            //    Console.WriteLine("Digite a cotação atual do dolar:");
+            //    double cotacao = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite quantos dolares gostaria de comprar");
+            //    double compra = double.Parse(Console.ReadLine());
+
+            //    double valorCompraComIof = ConversorDeMoeda.ConversaoDolar(cotacao, compra);
+
+            //    Console.WriteLine($"Você irá pagar R${valorCompraComIof:F2} em US${compra:F2}");
+
+            //    Console.WriteLine("Deseja calcular um novo caso?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+            //}            
 
             #endregion
 
