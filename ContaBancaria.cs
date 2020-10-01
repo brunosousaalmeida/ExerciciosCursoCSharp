@@ -10,19 +10,23 @@ namespace ExerciciosCursoCSharp
         private string _nome;
         public int NumeroConta { get; private set; }
         public double DepositoInicial { get; private set; }
+        public double SaldoConta { get; private set; }
 
-        ContaBancaria(string nome, int numeroConta, double depositoInicial)
+        
+        public ContaBancaria(string nome, int numeroConta, double depositoInicial)
         {
             _nome = nome;
             NumeroConta = numeroConta;
             DepositoInicial = depositoInicial;
+            SaldoConta = DepositoInicial;
 
         }
-        ContaBancaria(string nome, int numeroConta)
+        public ContaBancaria(string nome, int numeroConta)
         {
             _nome = nome;
             NumeroConta = numeroConta;
             DepositoInicial = 0;
+            SaldoConta = DepositoInicial;
         }
 
         public string Nome
@@ -30,13 +34,33 @@ namespace ExerciciosCursoCSharp
             get { return _nome; }
             set
             {
-                if(value != null && value.Length > 1)
+                if (value != null && value.Length > 1)
                 {
                     _nome = value;
                 }
             }
         }
 
+        public void DepositoConta(double valorDeposito)
+        {
+            SaldoConta += valorDeposito;
+        }
+
+        public void SaqueConta(double valorSaque)
+        {
+            double valorComTaxa = valorSaque + 5;
+            SaldoConta -= valorComTaxa;
+        }
+
+        public void AlterarNome(string nomeAtual)
+        {
+            Nome = nomeAtual;
+        }
+
+        public override string ToString()
+        {
+            return $"O número da conta é {NumeroConta}, o nome do títular é {_nome} e o saldo atual é R${SaldoConta}";
+        }
 
     }
 }

@@ -1435,6 +1435,40 @@ namespace ExerciciosCursoCSharp
             // Você deve fazer um programa que realize o cadastro de uma conta, dando opção para que seja ou não informado o valor de depósito inicial.
             // Em seguida, realizar um depósito e depois um saque, sempre mostrando os dados da conta após cada operação.
 
+            string cont = "SIM";
+
+            while (cont == "SIM" || cont == "S")
+            {
+
+               
+                Console.WriteLine("Digite o número da conta:");
+                int numeroConta = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite o nome do titular da conta:");
+                string nome = Console.ReadLine();
+                Console.WriteLine("Digite o depósito inicial (opcional):");
+                double depositoInicial = double.Parse(Console.ReadLine());
+
+                ContaBancaria contaBancaria = new ContaBancaria(nome, numeroConta, depositoInicial);
+
+                Console.WriteLine(contaBancaria);
+
+                Console.WriteLine("Digite um valor para depósito:");
+                double valorDeposito = double.Parse(Console.ReadLine());
+                contaBancaria.DepositoConta(valorDeposito);
+
+                Console.WriteLine(contaBancaria);
+
+                Console.WriteLine("Digite um valor para saque:");
+                double valorSaque = double.Parse(Console.ReadLine());
+                contaBancaria.SaqueConta(valorSaque);
+
+                Console.WriteLine(contaBancaria);
+
+                Console.WriteLine("Deseja refazer o processo?(Sim/Não)");
+                cont = Console.ReadLine().ToUpper();
+
+            }
+                       
 
 
             #endregion
