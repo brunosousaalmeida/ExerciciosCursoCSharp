@@ -1437,6 +1437,8 @@ namespace ExerciciosCursoCSharp
 
             string cont = "SIM";
 
+            ContaBancaria contaBancaria;
+
             while (cont == "SIM" || cont == "S")
             {
 
@@ -1445,10 +1447,19 @@ namespace ExerciciosCursoCSharp
                 int numeroConta = int.Parse(Console.ReadLine());
                 Console.WriteLine("Digite o nome do titular da conta:");
                 string nome = Console.ReadLine();
-                Console.WriteLine("Digite o depósito inicial (opcional):");
-                double depositoInicial = double.Parse(Console.ReadLine());
+                Console.WriteLine("Haverá depósito inicial:(Sim/Não)");
+                string resposta = Console.ReadLine().ToUpper();
 
-                ContaBancaria contaBancaria = new ContaBancaria(nome, numeroConta, depositoInicial);
+                if (resposta == "SIM" || resposta == "S")
+                {
+                    Console.WriteLine("Digite o valor do depósito inicial:");
+                    double depositoInicial = double.Parse(Console.ReadLine());
+                    contaBancaria = new ContaBancaria (nome, numeroConta, depositoInicial);
+                }
+                else
+                {
+                    contaBancaria = new ContaBancaria(nome, numeroConta);
+                }                
 
                 Console.WriteLine(contaBancaria);
 

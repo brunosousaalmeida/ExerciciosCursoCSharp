@@ -9,24 +9,23 @@ namespace ExerciciosCursoCSharp
     {
         private string _nome;
         public int NumeroConta { get; private set; }
-        public double DepositoInicial { get; private set; }
         public double SaldoConta { get; private set; }
 
-        
+        public ContaBancaria()
+        {
+        }
+
         public ContaBancaria(string nome, int numeroConta, double depositoInicial)
         {
             _nome = nome;
             NumeroConta = numeroConta;
-            DepositoInicial = depositoInicial;
-            SaldoConta = DepositoInicial;
+            DepositoConta(depositoInicial);
 
         }
         public ContaBancaria(string nome, int numeroConta)
         {
             _nome = nome;
             NumeroConta = numeroConta;
-            DepositoInicial = 0;
-            SaldoConta = DepositoInicial;
         }
 
         public string Nome
