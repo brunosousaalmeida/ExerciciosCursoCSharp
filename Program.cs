@@ -1435,58 +1435,100 @@ namespace ExerciciosCursoCSharp
             // Você deve fazer um programa que realize o cadastro de uma conta, dando opção para que seja ou não informado o valor de depósito inicial.
             // Em seguida, realizar um depósito e depois um saque, sempre mostrando os dados da conta após cada operação.
 
-            string cont = "SIM";
+            //string cont = "SIM";
 
-            ContaBancaria contaBancaria;
+            //ContaBancaria contaBancaria;
 
-            while (cont == "SIM" || cont == "S")
+            //while (cont == "SIM" || cont == "S")
+            //{
+
+
+            //    Console.WriteLine("Digite o número da conta:");
+            //    int numeroConta = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Digite o nome do titular da conta:");
+            //    string nome = Console.ReadLine();
+            //    Console.WriteLine("Haverá depósito inicial:(Sim/Não)");
+            //    string resposta = Console.ReadLine().ToUpper();
+
+            //    if (resposta == "SIM" || resposta == "S")
+            //    {
+            //        Console.WriteLine("Digite o valor do depósito inicial:");
+            //        double depositoInicial = double.Parse(Console.ReadLine());
+            //        contaBancaria = new ContaBancaria (nome, numeroConta, depositoInicial);
+            //    }
+            //    else
+            //    {
+            //        contaBancaria = new ContaBancaria(nome, numeroConta);
+            //    }                
+
+            //    Console.WriteLine(contaBancaria);
+
+            //    Console.WriteLine("Digite um valor para depósito:");
+            //    double valorDeposito = double.Parse(Console.ReadLine());
+            //    contaBancaria.DepositoConta(valorDeposito);
+
+            //    Console.WriteLine(contaBancaria);
+
+            //    Console.WriteLine("Digite um valor para saque:");
+            //    double valorSaque = double.Parse(Console.ReadLine());
+            //    contaBancaria.SaqueConta(valorSaque);
+
+            //    Console.WriteLine(contaBancaria);
+
+            //    Console.WriteLine("Deseja refazer o processo?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}
+
+
+
+            #endregion
+
+            #endregion
+
+            #region Seção 6
+
+            #region Atividade 1
+
+            // A dona de um pensionato possui dez quartos para alugar para estudantes,
+            // sendo esses quartos identificados pelos números 0 a 9.
+            // Quando um estudante deseja alugar um quarto, deve - se registrar o nome
+            // e email deste estudante.
+            // Fazer um programa que inicie com todos os dez quartos vazios, e depois
+            // leia uma quantidade N representando o número de estudantes que vão
+            // alugar quartos(N pode ser de 1 a 10).Em seguida, registre o aluguel dos
+            // N estudantes. Para cada registro de aluguel, informar o nome e email do
+            // estudante, bem como qual dos quartos ele escolheu(de 0 a 9).Suponha
+            // que seja escolhido um quarto vago. Ao final, seu programa deve imprimir
+            // um relatório de todas ocupações do pensionato, por ordem de quarto,
+            // conforme exemplo.
+
+            Console.WriteLine("Digite a quantidade de reservas a serem inseridas:");
+            int n = int.Parse(Console.ReadLine());
+
+            ReservaQuarto[] reservas = new ReservaQuarto[n];
+
+            for (int i = 0; i < n; i++)
             {
-
-               
-                Console.WriteLine("Digite o número da conta:");
-                int numeroConta = int.Parse(Console.ReadLine());
-                Console.WriteLine("Digite o nome do titular da conta:");
-                string nome = Console.ReadLine();
-                Console.WriteLine("Haverá depósito inicial:(Sim/Não)");
-                string resposta = Console.ReadLine().ToUpper();
-
-                if (resposta == "SIM" || resposta == "S")
-                {
-                    Console.WriteLine("Digite o valor do depósito inicial:");
-                    double depositoInicial = double.Parse(Console.ReadLine());
-                    contaBancaria = new ContaBancaria (nome, numeroConta, depositoInicial);
-                }
-                else
-                {
-                    contaBancaria = new ContaBancaria(nome, numeroConta);
-                }                
-
-                Console.WriteLine(contaBancaria);
-
-                Console.WriteLine("Digite um valor para depósito:");
-                double valorDeposito = double.Parse(Console.ReadLine());
-                contaBancaria.DepositoConta(valorDeposito);
-
-                Console.WriteLine(contaBancaria);
-
-                Console.WriteLine("Digite um valor para saque:");
-                double valorSaque = double.Parse(Console.ReadLine());
-                contaBancaria.SaqueConta(valorSaque);
-
-                Console.WriteLine(contaBancaria);
-
-                Console.WriteLine("Deseja refazer o processo?(Sim/Não)");
-                cont = Console.ReadLine().ToUpper();
+                Console.WriteLine("Digite o nome do hospede:");
+                reservas[i].Nome = Console.ReadLine();
+                Console.WriteLine("Digte o e-mail do hospede:");
+                reservas[i].Email = Console.ReadLine();
+                Console.WriteLine("Digite o número do quarto à reservar:");
+                reservas[i].NumeroQuarto = Console.ReadLine();
 
             }
-                       
 
+            for(int i = 0; i < n; i++)
+            {
+                Console.WriteLine(reservas[i]);
+            }
+          
 
             #endregion
 
+
             #endregion
-
-
 
 
         }
