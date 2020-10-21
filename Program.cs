@@ -8,6 +8,7 @@ using System.Runtime.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Globalization;
+using System.Resources;
 
 namespace ExerciciosCursoCSharp
 {
@@ -1503,26 +1504,39 @@ namespace ExerciciosCursoCSharp
             // um relatório de todas ocupações do pensionato, por ordem de quarto,
             // conforme exemplo.
 
-            Console.WriteLine("Digite a quantidade de reservas a serem inseridas:");
-            int n = int.Parse(Console.ReadLine());
+            string cont = "S";
 
-            ReservaQuarto[] reservas = new ReservaQuarto[n];
-
-            for (int i = 0; i < n; i++)
+            while (cont == "S" || cont == "SIM")
             {
-                Console.WriteLine("Digite o nome do hospede:");
-                reservas[i].Nome = Console.ReadLine();
-                Console.WriteLine("Digte o e-mail do hospede:");
-                reservas[i].Email = Console.ReadLine();
-                Console.WriteLine("Digite o número do quarto à reservar:");
-                reservas[i].NumeroQuarto = Console.ReadLine();
+                Console.WriteLine("Digite a quantidade de reservas a serem inseridas:");
+                int n = int.Parse(Console.ReadLine());
+
+                ReservaQuarto[] reservas = new ReservaQuarto[10];
+
+                for (int i = 0; i < n; i++)
+                {
+                    Console.WriteLine("Digite o nome do  hospede:");
+                    string nome = Console.ReadLine();
+                    Console.WriteLine("Digte o e-mail do hospede:");
+                    string email = Console.ReadLine();
+                    Console.WriteLine("Digite o número do quarto à reservar:");
+                    int quarto = int.Parse(Console.ReadLine());
+
+                    reservas[quarto] = new ReservaQuarto { Nome = nome, Email = email, NumeroQuarto = quarto };
+
+                }
+
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine(reservas[i]);
+                }
+
+                Console.WriteLine("Deseja realizar uma nova reservar?(Sim/Não)");
+                cont = Console.ReadLine().ToUpper();
 
             }
 
-            for(int i = 0; i < n; i++)
-            {
-                Console.WriteLine(reservas[i]);
-            }
+            
           
 
             #endregion

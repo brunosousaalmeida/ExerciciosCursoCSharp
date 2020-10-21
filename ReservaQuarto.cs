@@ -8,9 +8,14 @@ namespace ExerciciosCursoCSharp
     {
         public string Nome { get; set; }
         public string Email { get; set; }
-        public string NumeroQuarto { get; set; }
+        public int NumeroQuarto { get; set; }
 
-        public ReservaQuarto(string nome, string email, string numeroQuarto)
+        public ReservaQuarto()
+        {
+
+        }
+
+        public ReservaQuarto(string nome, string email, int numeroQuarto)
         {
             Nome = nome;
             Email = email;
