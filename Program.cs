@@ -1504,43 +1504,57 @@ namespace ExerciciosCursoCSharp
             // um relatório de todas ocupações do pensionato, por ordem de quarto,
             // conforme exemplo.
 
-            string cont = "S";
+            //string cont = "S";
 
-            while (cont == "S" || cont == "SIM")
-            {
-                Console.WriteLine("Digite a quantidade de reservas a serem inseridas:");
-                int n = int.Parse(Console.ReadLine());
+            //while (cont == "S" || cont == "SIM")
+            //{
+            //    Console.WriteLine("Digite a quantidade de reservas a serem inseridas:");
+            //    int n = int.Parse(Console.ReadLine());
 
-                ReservaQuarto[] reservas = new ReservaQuarto[10];
+            //    ReservaQuarto[] reservas = new ReservaQuarto[10];
 
-                for (int i = 0; i < n; i++)
-                {
-                    Console.WriteLine("Digite o nome do  hospede:");
-                    string nome = Console.ReadLine();
-                    Console.WriteLine("Digte o e-mail do hospede:");
-                    string email = Console.ReadLine();
-                    Console.WriteLine("Digite o número do quarto à reservar:");
-                    int quarto = int.Parse(Console.ReadLine());
+            //    for (int i = 0; i < n; i++)
+            //    {
+            //        Console.WriteLine("Digite o nome do  hospede:");
+            //        string nome = Console.ReadLine();
+            //        Console.WriteLine("Digte o e-mail do hospede:");
+            //        string email = Console.ReadLine();
+            //        Console.WriteLine("Digite o número do quarto à reservar:");
+            //        int quarto = int.Parse(Console.ReadLine());
 
-                    reservas[quarto] = new ReservaQuarto { Nome = nome, Email = email, NumeroQuarto = quarto };
+            //        reservas[quarto] = new ReservaQuarto { Nome = nome, Email = email, NumeroQuarto = quarto };
 
-                }
+            //    }
 
-                for (int i = 0; i < 10; i++)
-                {
-                    Console.WriteLine(reservas[i]);
-                }
+            //    for (int i = 0; i < 10; i++)
+            //    {
+            //        Console.WriteLine(reservas[i]);
+            //    }
 
-                Console.WriteLine("Deseja realizar uma nova reservar?(Sim/Não)");
-                cont = Console.ReadLine().ToUpper();
+            //    Console.WriteLine("Deseja realizar uma nova reservar?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
 
-            }
-
-            
-          
+            //}
 
             #endregion
 
+            #region Atividade 2
+
+            // Fazer um programa para ler um número inteiro N e depois os dados(id, nome e salario) de
+            // N funcionários.Não deve haver repetição de id.
+            // Em seguida, efetuar o aumento de X por cento no salário de um determinado funcionário.
+            // Para isso, o programa deve ler um id e o valor X.Se o id informado não existir, mostrar uma
+            // mensagem e abortar a operação. Ao final, mostrar a listagem atualizada dos funcionários,
+            // conforme exemplos.
+            // Lembre - se de aplicar a técnica de encapsulamento para não permitir que o salário possa
+            // ser mudado livremente. Um salário só pode ser aumentado com base em uma operação de
+            // aumento por porcentagem dada.
+
+            Console.WriteLine("Digite a quantidade de funcionários que serão inseridos:");
+            int n = int.Parse(Console.ReadLine());
+
+
+            #endregion
 
             #endregion
 
