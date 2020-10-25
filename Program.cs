@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Globalization;
 using System.Resources;
+using System.Collections.Generic;
 
 namespace ExerciciosCursoCSharp
 {
@@ -1552,6 +1553,33 @@ namespace ExerciciosCursoCSharp
 
             Console.WriteLine("Digite a quantidade de funcionários que serão inseridos:");
             int n = int.Parse(Console.ReadLine());
+
+            List<Funcionario1> listaFunc = new List<Funcionario1>();
+
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine($"Digite o ID do {i}º funcionário a ser inserido:");
+                int id = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite o nome do funcíonário:");
+                string nome = Console.ReadLine();
+                Console.WriteLine("Digite o valor do saláro:");
+                double salario = double.Parse(Console.ReadLine());
+
+                listaFunc.Add(new Funcionario1(id,nome,salario));
+
+            }
+
+            Console.WriteLine("Digite o ID do funcinário que receberá o aumento de seu salário:");
+            int funcSelec = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o percentual para aumento dos salários:");
+            double p = double.Parse(Console.ReadLine());
+
+
+
+            foreach (object func in listaFunc)
+            {
+                Console.WriteLine(func);
+            }
 
 
             #endregion
