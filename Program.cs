@@ -1551,35 +1551,56 @@ namespace ExerciciosCursoCSharp
             // ser mudado livremente. Um salário só pode ser aumentado com base em uma operação de
             // aumento por porcentagem dada.
 
-            Console.WriteLine("Digite a quantidade de funcionários que serão inseridos:");
-            int n = int.Parse(Console.ReadLine());
-
-            List<Funcionario1> listaFunc = new List<Funcionario1>();
-
-            for (int i = 1; i <= n; i++)
-            {
-                Console.WriteLine($"Digite o ID do {i}º funcionário a ser inserido:");
-                int id = int.Parse(Console.ReadLine());
-                Console.WriteLine("Digite o nome do funcíonário:");
-                string nome = Console.ReadLine();
-                Console.WriteLine("Digite o valor do saláro:");
-                double salario = double.Parse(Console.ReadLine());
-
-                listaFunc.Add(new Funcionario1(id,nome,salario));
-
-            }
-
-            Console.WriteLine("Digite o ID do funcinário que receberá o aumento de seu salário:");
-            int funcSelec = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o percentual para aumento dos salários:");
-            double p = double.Parse(Console.ReadLine());
+            //string cont = "S";
 
 
+            //while(cont == "S" || cont == "SIM")
+            //{
 
-            foreach (object func in listaFunc)
-            {
-                Console.WriteLine(func);
-            }
+            //    Console.WriteLine("Digite a quantidade de funcionários que serão inseridos:");
+            //    int n = int.Parse(Console.ReadLine());
+
+            //    List<Funcionario1> listaFunc = new List<Funcionario1>();
+
+            //    for (int i = 1; i <= n; i++)
+            //    {
+            //        Console.WriteLine($"Digite o ID do {i}º funcionário a ser inserido:");
+            //        int id = int.Parse(Console.ReadLine());
+            //        Console.WriteLine("Digite o nome do funcíonário:");
+            //        string nome = Console.ReadLine();
+            //        Console.WriteLine("Digite o valor do saláro:");
+            //        double salario = double.Parse(Console.ReadLine());
+
+            //        listaFunc.Add(new Funcionario1(id, nome, salario));
+
+            //    }
+
+            //    Console.WriteLine("Digite o ID do funcinário que receberá o aumento de seu salário:");
+            //    int funcSelec = int.Parse(Console.ReadLine());
+
+            //    Funcionario1 sel = listaFunc.Find(x => x.Id == funcSelec);
+
+            //    if (sel != null)
+            //    {
+            //        Console.WriteLine(sel);
+            //        Console.WriteLine("Digite o percentual para aumento dos salários:");
+            //        double p = double.Parse(Console.ReadLine());
+
+            //        sel.AumentarSalario(p);
+            //    }
+
+
+
+
+            //    foreach (object func in listaFunc)
+            //    {
+            //        Console.WriteLine(func);
+            //    }
+
+            //    Console.WriteLine("Deseja realizar novo processo?(Sim/Não)");
+            //    cont = Console.ReadLine().ToUpper();
+
+            //}           
 
 
             #endregion

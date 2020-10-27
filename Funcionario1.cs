@@ -33,7 +33,7 @@ namespace ExerciciosCursoCSharp
 
         public double AumentarSalario(double aliquotaAumento)
         {
-            return Salario += (aliquotaAumento / 100) * Salario;
+            return Salario += ((aliquotaAumento / 100) * Salario);
         }
 
         public override string ToString()
